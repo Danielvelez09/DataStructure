@@ -2,7 +2,7 @@ package EstructuraNoLineal;
 
 public class ArbolFigura1 {
     public static void main(String[] args) {
-        // Crear el árbol basado en la Figura 1
+
         ArbolBinario arbol = new ArbolBinario("A1");
         arbol.raiz.izq = new Nodo("C5");
         arbol.raiz.der = new Nodo("D7");
@@ -13,7 +13,6 @@ public class ArbolFigura1 {
         arbol.raiz.izq.izq.izq = new Nodo("J1");
         arbol.raiz.izq.izq.der = new Nodo("T3");
 
-        // Imprimir recorridos
         System.out.print("Preorden: ");
         arbol.preorden(arbol.raiz);
         System.out.println();
